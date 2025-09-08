@@ -27,7 +27,6 @@ jobs:
 
       
       - name: Terraform Initghgh
-        id: init
         run: terraform init -reconfigure
 
       - name: Terraform Init
