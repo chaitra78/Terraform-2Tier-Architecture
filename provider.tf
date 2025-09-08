@@ -10,9 +10,8 @@ terraform {
       version = "~> 6.0"                # This means any version >= 5.0.0 and < 6.0.0
     }
   }
-}
 
-terraform {
+
   backend "s3" {
     bucket         = "my-s3-bucket-name-cr"       # Replace with your bucket name
     key            = "usecase2/terraform.tfstate"          # Path inside the bucket
