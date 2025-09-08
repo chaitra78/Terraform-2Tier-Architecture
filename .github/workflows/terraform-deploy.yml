@@ -25,6 +25,11 @@ jobs:
       - name: providers
         run : terraform providers
 
+      
+      - name: Terraform Initghgh
+        id: init
+        run: terraform init -reconfigure
+
       - name: Terraform Init
         id: init
         run: terraform init -upgrade
